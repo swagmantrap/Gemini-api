@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="icon1.svg" type="image/icon type">
+  <title>ArtisanInsight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo-title">
+        <img src="icon1.svg" alt="ArtisanInsight logo" class="logo" />
+        <h1>ArtisanInsight</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="chat-container" id="chat-container">
+      <div class="message ai-message">
+        <div class="message-content" id="welcome-message"></div>
+      </div>
+      <!-- Other messages will be added here dynamically -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="input-container">
+      <div class="image-upload">
+        <label for="image-upload" class="file-input-label">
+          📁
+          <input type="file" id="image-upload" name="uploaded-image" accept="image/*">
+        </label>
+      </div>
+      <form id="input-form">
+        <div class="prompt-box">
+          <input name="prompt" placeholder="Ask about your artwork..." type="text" required>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    <div class="image-preview" id="image-preview">
+      <img src="" alt="Artwork Preview">
+      <button class="close-button" id="close-image">&times;</button>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
